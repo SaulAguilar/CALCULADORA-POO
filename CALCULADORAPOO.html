@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA CON POO</title>
+</head>
+<body>
+    <label>INGRESA EL PRIMER VALOR</label><br>
+    <br>
+    <input type="text" id="num1" placeholder="INGRESA EL PRIMER NUMERO"><br>
+    <br>
+    <label>INGRESA EL SIGNO</label><br>
+    <br>
+    <input type="text" id="opc" placeholder="INGRESA EL SIGNO"><br>
+    <br>
+    <label>INGRESA EL SEGUNDO VALOR</label><br>
+    <br>
+    <input type="text" id="num2" placeholder="INGRESA EL SEGUNDO NUMERO"><br>
+    <br>
+    <script src="CALCULADORAPOO.js"></script>
+    <script>
+        alert("bienvenido a la calculadora");
+        function calcular(){
+    var n1= parseInt(document.getElementById("num1").value);
+    var n2= parseInt(document.getElementById("num2").value);
+    var op= document.getElementById("opc").value;
+    let Cal=new Calculadora(n1,n2,op);
+    console.log(Cal);}
+    </script>
+        <button type="submit" id="1" onclick="calcular();"><h4>CALCULAR</h4></button><br>
+</body>
+</html>
